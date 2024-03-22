@@ -21,7 +21,6 @@ pipeline:
                     repo: erinorourke17/aws-test-app
                     tags:
                       - latest
-                    dockerfile: Dockerfile
           platform:
             os: Linux
             arch: Amd64
