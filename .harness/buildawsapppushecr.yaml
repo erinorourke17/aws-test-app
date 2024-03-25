@@ -91,3 +91,5 @@ pipeline:
                 type: StageRollback
         when:
           pipelineStatus: Success
+        delegateSelectors:
+          - eks-delegate
