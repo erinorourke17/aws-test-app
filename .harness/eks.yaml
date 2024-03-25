@@ -9,7 +9,7 @@ infrastructureDefinition:
   spec:
     connectorRef: awsconnector2
     cluster: us-west-2/aws-test-cluster
-    namespace: eks-sample-app
+    namespace: default
     releaseName: release-<+INFRA_KEY_SHORT_ID>
     region: us-west-2
   allowSimultaneousDeployments: false
