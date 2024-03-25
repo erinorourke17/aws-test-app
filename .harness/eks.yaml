@@ -7,8 +7,8 @@ infrastructureDefinition:
   deploymentType: Kubernetes
   type: KubernetesAws
   spec:
-    connectorRef: awsconnector
-    cluster: aws-test-cluster
+    connectorRef: awsconnector2
+    cluster: us-west-2/aws-test-cluster
     namespace: eks-sample-app
     releaseName: release-<+INFRA_KEY_SHORT_ID>
     provisioner: <+input>
