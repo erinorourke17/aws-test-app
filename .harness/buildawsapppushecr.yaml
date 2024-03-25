@@ -34,6 +34,6 @@ pipeline:
                     connectorRef: awsconnector
                     region: us-west-2
                     account: "905418491916"
-                    imageName: aws-test-app
+                    imageName: aws-test-project
                     tags:
                       - latest
