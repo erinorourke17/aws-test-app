@@ -31,7 +31,7 @@ pipeline:
                   name: BuildAndPushECR_1
                   identifier: BuildAndPushECR_1
                   spec:
-                    connectorRef: awsconnector
+                    connectorRef: awsconnector2
                     region: us-west-2
                     account: "905418491916"
                     imageName: aws-test-project
