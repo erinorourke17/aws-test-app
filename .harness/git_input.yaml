@@ -1,0 +1,14 @@
+inputSet:
+  name: git input
+  identifier: git_input
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: buildawsapppushecr
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
