@@ -59,11 +59,6 @@ pipeline:
             deployToAll: false
             infrastructureDefinitions:
               - identifier: eks
-                inputs:
-                  identifier: eks
-                  type: KubernetesAws
-                  spec:
-                    provisioner: <+input>
           execution:
             steps:
               - step:
