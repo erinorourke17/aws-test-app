@@ -32,5 +32,6 @@ spec:
       containers:
       - name: test-aws-app
         image: 905418491916.dkr.ecr.us-west-2.amazonaws.com/aws-test-project:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
