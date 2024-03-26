@@ -58,12 +58,7 @@ pipeline:
             environmentRef: prod
             deployToAll: false
             infrastructureDefinitions:
-              - identifier: eks
-                inputs:
-                  identifier: eks
-                  type: KubernetesAws
-                  spec:
-                    provisioner: <+input>
+              - identifier: eksnative
           execution:
             steps:
               - step:
