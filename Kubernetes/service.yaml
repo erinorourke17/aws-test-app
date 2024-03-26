@@ -1,0 +1,23 @@
+service:
+    name: aws_test_app
+    identifier: awstestapp
+    serviceDefinition:
+        type: Kubernetes
+        spec:
+            manifests:
+                - manifest:
+                    identifier: testapp
+                    type: K8sManifest
+                    spec:
+                      store:
+                        type: Github
+                        spec:
+                            connectorRef: harnessgitconnector
+                            gitFetchType: Branch
+                            paths:
+                                - kubernetes/deployment.yaml
+                            repoName: aws-test-app
+                            branch: main
+                        skipResourceVersioning: false
+                        enableDeclarativeRollback: false
+    gitOpsEnabled: false
