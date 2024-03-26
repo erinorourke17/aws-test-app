@@ -1,0 +1,15 @@
+infrastructureDefinition:
+  name: eks-native
+  identifier: eksnative
+  orgIdentifier: default
+  projectIdentifier: default_project
+  environmentRef: prod
+  deploymentType: Kubernetes
+  type: KubernetesAws
+  spec:
+    connectorRef: awsconnector2
+    cluster: us-west-2/aws-test-cluster
+    namespace: default
+    releaseName: release-<+INFRA_KEY_SHORT_ID>
+    region: us-west-2
+  allowSimultaneousDeployments: false
