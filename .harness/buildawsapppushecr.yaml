@@ -37,3 +37,33 @@ pipeline:
                     imageName: aws-test-project
                     tags:
                       - latest
+    - stage:
+        name: Deploy-eks
+        identifier: Deployeks
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          platform:
+            os: Linux
+            arch: Amd64
+          runtime:
+            type: Cloud
+            spec: {}
+          execution:
+            steps:
+              - step:
+                  type: BuildAndPushECR
+                  name: BuildAndPushECR_1
+                  identifier: BuildAndPushECR_1
+                  spec:
+                    connectorRef: awsconnector2
+                    region: us-west-2
+                    account: "905418491916"
+                    imageName: aws-test-project
+                    tags:
+                      - latest
+        delegateSelectors:
+          - eks-delegate
+        when:
+          pipelineStatus: Success
