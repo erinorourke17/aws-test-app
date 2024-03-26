@@ -11,5 +11,6 @@ infrastructureDefinition:
     cluster: us-west-2/aws-test-cluster
     namespace: default
     releaseName: release-<+INFRA_KEY_SHORT_ID>
+    provisioner: <+input>
     region: us-west-2
   allowSimultaneousDeployments: false
