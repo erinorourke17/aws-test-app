@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World from K8s deployed using Harness CD"}
+    return {"message": "Hello World from K8s"}
