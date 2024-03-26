@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/test")
 async def root():
-    return {"message": "Third time's the charm: validating this pipeline"}
+    return {"message": "Test 1 2 3 4 5"}
