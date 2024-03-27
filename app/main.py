@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/test")
 async def root():
-    return {"message": "I am not a robot"}
+    return {"message": "Beep boop"}
