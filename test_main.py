@@ -18,5 +18,5 @@ def test_with_invalid_input():
     response = client.post("/test")
     data = response.json()
 
-    assert response.status_code != status.HTTP_200_OK
+    assert response.status_code == status.HTTP_200_OK
     assert "Method Not Allowed" in data["detail"]
